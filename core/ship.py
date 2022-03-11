@@ -25,6 +25,6 @@ class Ship():
         for x in self.coordinates:
             coordinates.append(f"{'ABCDEFGHIJ'[x[1]]}:{x[0] + 1}")
         for x in self.damaged_coordinates:
-            damaged_coordinates.append(f"{'ABCDEFGHIJ'[x[1]]}:{x[0] + 1}")
+            damaged_coordinates.append(f"{'ABCDEFGHIJ'[x[0]]}:{x[1]}")
         return f"Ship: {self.name} | Health: {self.lives}/{self.number_of_decks} |" + \
             f" Coordinates: {coordinates} | Damaged coordinates: {damaged_coordinates}"
