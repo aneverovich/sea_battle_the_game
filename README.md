@@ -1,2 +1,5 @@
-# sea_battle_the_game
-Sea Battle | OOP based python version of popular game
+### Sea Battle the Game | OOP python based version of popular game
+<hr>
+
+To start the game in console mode - run:
+> python3 game.py
