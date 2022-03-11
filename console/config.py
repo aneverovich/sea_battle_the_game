@@ -9,7 +9,7 @@ BROKEN_SHIP_CELL = t_red_bold('[X]')
 MISSED_SHOT_CELL = t_yellow_bold(' * ')
 
 # Check the terminal width (columns) and height (rows)
-rows, columns = os.popen('stty size', 'r').read().split()
+columns, rows = os.get_terminal_size()
 TERMINAL_WIDTH = int(columns)
 
 GAMEBOARD_WIDTH = 54
