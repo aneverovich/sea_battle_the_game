@@ -16,6 +16,7 @@ from console.config import EMPTY_CELL
 from console.config import HEALTHY_SHIP_CELL
 from console.config import BROKEN_SHIP_CELL
 from console.config import MISSED_SHOT_CELL
+from console.config import BOARD_ROW_DIVIDER
 from core.constants import GAME_TITLE
 from core.constants import AUTHOR_LINE
 
@@ -125,7 +126,7 @@ def refresh_screen(display_data: tuple, command_response: str, winner: str) -> N
     else:
         print('\n' + c_text(f'\033[4m{left_username}\033[0m') + '\n')
         print(LITERALS_LINE)
-        print(' ' * 7 + '--' * 20 + '-')
+        print(BOARD_ROW_DIVIDER)
         for line in range(10):
             chr_left = 4 if line < 9 else 3
             space_left = ' ' * chr_left + f'{line + 1}  |'
@@ -141,7 +142,7 @@ def refresh_screen(display_data: tuple, command_response: str, winner: str) -> N
                     left_gameboard_line_cells.append(MISSED_SHOT_CELL)
             left_gameboard_line_cells = '|'.join(left_gameboard_line_cells)
             print(space_left + left_gameboard_line_cells + '|')
-            print(' ' * 7 + '--' * 20 + '-')
+            print(BOARD_ROW_DIVIDER)
         print('\n' + c_text(f'\033[4m{right_username}\033[0m') + '\n')
         print(LITERALS_LINE)
         print(' ' * 7 + '--' * 20 + '-')
