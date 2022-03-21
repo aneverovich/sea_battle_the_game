@@ -8,17 +8,10 @@ from core.functions.check_border_coordinates import find_one_deck_ship_border_co
 class Gameboard():
 
     def __init__(self):
-        self.board = [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+        self.battlefield = {
+            level: [[0 for cell in range(10)] for line in range(10)] for level in range(0, -11, -1)
+        }
+        self.board = self.battlefield[0]
         self.ships = (
             Ship(4, 'd4'),
             Ship(3, 'd3_1'),
