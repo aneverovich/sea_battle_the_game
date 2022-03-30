@@ -1,9 +1,10 @@
-from core.functions.convertion import convert_coordinates
+from core.functions.conversion import convert_coordinates
 
 
 class Ship():
 
     def __init__(self, number_of_decks, name):
+        self.type = 'Ship'
         self.name = name
         self.number_of_decks = number_of_decks
         self.coordinates = []
@@ -25,5 +26,6 @@ class Ship():
     def __str__(self):
         coordinates = convert_coordinates(self.coordinates)
         damaged_coordinates = convert_coordinates(self.damaged_coordinates)
-        return f"Ship: {self.name} | Health: {self.lives}/{self.number_of_decks} |" + \
-            f" Coordinates: {coordinates} | Damaged coordinates: {damaged_coordinates}"
+        level_str = f" level: {self.level} |" if hasattr(self, 'level') else ''
+        return f"{self.type}: {self.name} | Health: {self.lives}/{self.number_of_decks} |" + \
+            f"{level_str} Coordinates: {coordinates} | Damaged coordinates: {damaged_coordinates}"

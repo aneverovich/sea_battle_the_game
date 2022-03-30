@@ -1,0 +1,103 @@
+{
+    "history": [
+        {
+            "time": "14:41:54",
+            "player": "Player",
+            "event": {
+                "target": "B:2",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:41:58",
+            "player": "ArtificalIntelligence",
+            "event": {
+                "target": "H:4",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:00",
+            "player": "Player",
+            "event": {
+                "target": "C:5",
+                "successful_attack": true,
+                "bomb": false,
+                "object": "d3_2",
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:03",
+            "player": "Player",
+            "event": {
+                "target": "C:6",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:07",
+            "player": "ArtificalIntelligence",
+            "event": {
+                "target": "D:3",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:09",
+            "player": "Player",
+            "event": {
+                "target": "D:5",
+                "successful_attack": true,
+                "bomb": false,
+                "object": "d3_2",
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:12",
+            "player": "Player",
+            "event": {
+                "target": "E:5",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:16",
+            "player": "ArtificalIntelligence",
+            "event": {
+                "target": "E:2",
+                "successful_attack": false,
+                "bomb": false,
+                "object": null,
+                "game_over": false
+            }
+        },
+        {
+            "time": "14:42:18",
+            "player": "Player",
+            "event": {
+                "target": "B:5",
+                "successful_attack": true,
+                "bomb": false,
+                "object": "d3_2",
+                "game_over": false
+            }
+        }
+    ]
+}
