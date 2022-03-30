@@ -1,11 +1,17 @@
 import os
 from console.terminal_colors import t_green, t_red_bold, t_yellow_bold
 
+VERSION = "0.2"
+GAME_TITLE = f"Sea Battle the Game | OOP python based version (v.{VERSION})"
+AUTHOR_LINE = "by Anton Neviarovich"
+
 LITERALS = '  A   B   C   D   E   F   G   H   I   J'
 
 HEALTHY_SHIP_CELL = t_green('[#]')
 EMPTY_CELL = '   '
 BROKEN_SHIP_CELL = t_red_bold('[X]')
+BOMB_CELL = t_red_bold('[B]')
+EXPLODED_BOMB_CELL = t_yellow_bold('[B]')
 MISSED_SHOT_CELL = t_yellow_bold(' * ')
 
 # Check the terminal width (columns) and height (rows)
